@@ -27,13 +27,13 @@ const validationSchema = Yup.object().shape({
     .required("Email is required")
     .email("Invalid email address"),
   phoneNo: Yup.string()
-    .required("Phone number is required!")
+    .required("Phone number is required")
     .matches(/^\91[1-9]\d{9}$/, "Invalid phone number"),
   password: Yup.string()
     .required("Password is required")
     .min(8, "Password must be at least 8 characters long"),
   confirmPassword: Yup.string()
-    .required("Confirm Password is required")
+    .required("Please confirm your password")
     .oneOf([Yup.ref("password"), ""], "Passwords do not match"),
   profile: Yup.mixed()
     .required("Profile picture is required")
