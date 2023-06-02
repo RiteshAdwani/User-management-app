@@ -1,0 +1,93 @@
+body {
+  height: 100vh;
+}
+
+.main-body {
+  margin: 0;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+img.profile-img {
+  border: 1px solid white;
+}
+
+nav.home-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 20px 32px;
+  -webkit-box-shadow: 0px 10px 12px -3px rgba(117, 116, 117, 1);
+  box-shadow: 0px 10px 12px -3px rgba(117, 116, 117, 1);
+}
+
+.error-message{
+  color: rgb(194, 64, 64);
+}
+
+.input-field.form-control {
+  background-color: rgb(250, 235, 216);
+}
+
+.input-field.form-control:focus {
+  background-color: rgb(250, 235, 216);
+  border-color: #6b798d;
+  box-shadow: 0 0 0 0.25rem rgb(216 228 245 / 25%);
+}
+
+.signup-form,
+.login-form {
+  width: 35%;
+}
+
+.profile-pic {
+  border: 1px solid white;
+}
+
+/* Media Queries */
+
+@media (max-width: 992px) {
+  html {
+    font-size: smaller;
+  }
+  .signup-form,
+  .login-form {
+    width: 47%;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: small;
+  }
+  .signup-form,
+  .login-form {
+    width: 45%;
+  }
+  .profile-img{
+    height: 160px;
+  }
+  .not-found-img{
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: x-small;
+  }
+  .signup-form,
+  .login-form {
+    width: 80%;
+  }
+  #root {
+    padding: 0 5%;
+  }
+  .not-found-img{
+    height: 600px;
+    width: 350px;
+  }
+}
